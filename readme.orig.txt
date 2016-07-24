@@ -53,7 +53,7 @@ Table of Contents
   0.1: Copyright/License
   ----------------------
      DirectX Bomns is copyright (c) 1998-2002 Charles Lindsay (that's me), one
-might say for Allied Computers, Jasón's and my "business."  But that's not
+might say for Allied Computers, JasÃ³n's and my "business."  But that's not
 really important.  What IS important is that DXBomns is open source and
 freeware.  This means that I do not mind whatsoever if you copy, modify, and/or
 distribute the contents of this .zip file however you wish.  I do request that
@@ -85,7 +85,7 @@ friends and I have been hooked.  If not hooked on PLAYING it, we've certainly
 been hooked on programming it.  How else could I explain the multitude of
 different versions of Bomns that have been "programmed" (read: started, but
 usually not finished) to date?  I'll list a few: Bomns Squared (completed!),
-Bomns Cubed (Jasón?), Bomns for Basic (again, Jasón?), Bomns for Linux (on its
+Bomns Cubed (JasÃ³n?), Bomns for Basic (again, JasÃ³n?), Bomns for Linux (on its
 way from Keith), and of course, DirectX Bomns, the reason for this readme.
      So what's the big deal?  It's a really simple action/arcade game that lends
 itself well enough to being played in text mode, and doesn't put too much of a
