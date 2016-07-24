@@ -1,0 +1,93 @@
+DirectX Bomns History
+
+Go to http://bomns.sourceforge.net/ for the newest version.
+
+By Date (newest first)
+======================
+Friday, March 29, 2002
+ - Built DirectX Bomns v1.1.8.0.  The reason for this release is a small
+bug-fix.  Previously, a player was unable to actually use <enter> as a key (even
+though I claimed one could).  This has been fixed.
+
+Monday, March 18, 2002
+ - Built DirectX Bomns v1.0.8.0.  This is the first major, completed, and tested
+release.  I've got a LITTLE work to do on some graphics, so it'll be a couple
+days before I upload this, but this is when it happened.  I've got some ideas
+with what I want to do with future versions, but for now, I'm done (unless there
+are any bugs or anything else)!
+
+Tuesday, March 5, 2002
+ - Built DirectX Bomns v0.1.8.0 Beta.  I plan on uploading it tomorrow sometime,
+after doing a bit of testing on it myself.  The engine is fully functional.  The
+only things that remain are to flesh things out a bit, make stuff more flashy,
+finish help messages, etc.  Of course, it needs to be tested, as well (hence,
+I'm making this beta public).
+
+Thursday, February 28, 2002
+ - Released DirectX Bomns v0.0.8.3 Alpha.  The game engine is done (but not
+tested), except for bomns.  That is, you can do everything but drop bomns.
+Remaining before a Beta release: test engine, add bomns support, test those.
+Remaining before a public release: test everything!
+
+Saturday, February 23, 2002
+ - Released DirectX Bomns v0.0.8.2.  The windows interface is complete, and the
+editor is done (but has not been tested).  The engine is all that remains, but
+shouldn't take long, as I've got the skeleton already in place.  I'm doing
+pretty well, though, having completed the entire game and level editors in just
+10 days (and only seriously coding once every two or three days!).  I rule!
+Also, no bugs are known yet, but like I said, I need to test the editor a lot.
+
+Thursday, February 14, 2002
+ - Released the obligatory DirectX Bomns v0.0.8.1, with mosh.wav a-playin' (and
+an annoying bug where you can only go to the screen once, then it crashes).
+
+Wednesday, February 13, 2002
+ - Started DirectX Bomns v0.0.8.0, this time TOTALLY from scratch.  Based on the
+DXSpeedTest tests, I've decided the fastest way to go about this is to use
+DDraw7 for the graphics.
+
+
+By Version (newest first)
+=========================
+v1.1.8.0
+--------
+ - Second major public release, which fixes a bug found in v1.0.8.0.
+ - Changes since last version: Fixed the bug where a player couldn't actually
+use <enter> as a key in the game (even though I had indicated one could)
+
+v1.0.8.0
+--------
+ - First major public release.  The game has now been tested somewhat, and
+various tweaks and features have been added.
+ - Changes since last version: Many, many minor changes (I'll start paying
+attention to specifics next release)
+
+v0.1.8.0
+--------
+ - Beta.  The initial engine is done and must be tested
+ - Changes: Added bomns and explosions, various tweaks here and there, finished
+engine 100%
+
+v0.0.8.3
+--------
+ - Alpha.  No bomns yet, but other than that, the engine is done
+ - Changes: Fixed some minor details in the editor, added some options, and got
+most of the engine done
+
+v0.0.8.2
+--------
+ - Editor test.  Got the windows and level editor code working
+ - Changes: Actually pertinent to the game, and is cool
+
+v0.0.8.1
+--------
+ - DirectX engine test.  Got the DX code up and working, wanted to test it
+ - Changes: Actually does something
+
+v0.0.8.0
+--------
+ - Preliminary work (nothing to release)
+
+Less than v0.0.8.0
+------------------
+ - Old versions which only served to test the DirectX waters

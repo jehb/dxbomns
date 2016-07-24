@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DXBomns - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/DXBomns.res" /d "NDEBUG" "C:\Files\Projects\DXBomns\DXBomns.rc"" 
+Creating temporary file "C:\DOCUME~1\Toxite\LOCALS~1\Temp\RSP34.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/DXBomns.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Files\Projects\DXBomns\Bomn.cpp"
+"C:\Files\Projects\DXBomns\DXBomns.cpp"
+"C:\Files\Projects\DXBomns\DXWindow.cpp"
+"C:\Files\Projects\DXBomns\Editor.cpp"
+"C:\Files\Projects\DXBomns\EditorDialog.cpp"
+"C:\Files\Projects\DXBomns\Font.cpp"
+"C:\Files\Projects\DXBomns\Game.cpp"
+"C:\Files\Projects\DXBomns\Graphics.cpp"
+"C:\Files\Projects\DXBomns\Input.cpp"
+"C:\Files\Projects\DXBomns\Level.cpp"
+"C:\Files\Projects\DXBomns\Opts.cpp"
+"C:\Files\Projects\DXBomns\Player.cpp"
+"C:\Files\Projects\DXBomns\Sound.cpp"
+"C:\Files\Projects\DXBomns\World.cpp"
+"C:\Files\Projects\DXBomns\XNotDirect.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\Toxite\LOCALS~1\Temp\RSP34.tmp" 
+Creating temporary file "C:\DOCUME~1\Toxite\LOCALS~1\Temp\RSP35.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winmm.lib comdlg32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/DXBomns.pdb" /machine:I386 /out:"Release/DXBomns.exe" 
+.\Release\Bomn.obj
+.\Release\DXBomns.obj
+.\Release\DXWindow.obj
+.\Release\Editor.obj
+.\Release\EditorDialog.obj
+.\Release\Font.obj
+.\Release\Game.obj
+.\Release\Graphics.obj
+.\Release\Input.obj
+.\Release\Level.obj
+.\Release\Opts.obj
+.\Release\Player.obj
+.\Release\Sound.obj
+.\Release\World.obj
+.\Release\XNotDirect.obj
+.\Release\DXBomns.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Toxite\LOCALS~1\Temp\RSP35.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+Bomn.cpp
+DXBomns.cpp
+DXWindow.cpp
+Editor.cpp
+EditorDialog.cpp
+Font.cpp
+Game.cpp
+Graphics.cpp
+Input.cpp
+Level.cpp
+Opts.cpp
+Player.cpp
+Sound.cpp
+World.cpp
+XNotDirect.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+DXBomns.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

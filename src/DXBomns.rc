@@ -1,0 +1,359 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+#include "Ver.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION DXBOMNS_VERSION
+ PRODUCTVERSION DXBOMNS_VERSION
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Check http://bomns.sourceforge.net/ for updates!\0"
+            VALUE "CompanyName", "Allied Computers\0"
+            VALUE "FileDescription", DXBOMNS_VER_STR_LONG
+            VALUE "FileVersion", DXBOMNS_VER_STR
+            VALUE "InternalName", "DXBomns\0"
+            VALUE "LegalCopyright", "Copyright © 1998-2002\0"
+            VALUE "LegalTrademarks", "DXBomns is a trademark of Allied Computers\0"
+            VALUE "OriginalFilename", "DXBomns.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "DirectX Bomns\0"
+            VALUE "ProductVersion", DXBOMNS_VER_STR
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DXB                 BITMAP  DISCARDABLE     "DXBomns.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STARTUP DIALOGEX 0, 0, 399, 216
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "DirectX Bomns Startup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Play...",IDOK,7,188,148,21,WS_GROUP
+    PUSHBUTTON      "&About / Credits...",ID_CREDITS,164,188,70,21
+    PUSHBUTTON      "&Quit",IDCANCEL,244,188,148,21
+    CONTROL         IDB_DXB,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,7,385,
+                    174
+END
+
+IDD_EDITOR DIALOGEX 0, 0, 416, 251
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "DirectX Bomns Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GAM_NPLAYERS,13,18,9,12,ES_NUMBER | WS_GROUP
+    EDITTEXT        IDC_GAM_STARTHEALTH,23,43,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_MAXHEALTH,41,43,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_STARTBOMNS,23,58,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_MAXBOMNS,41,58,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_STARTRADIUS,23,73,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_MAXRADIUS,41,73,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_MINRADIUS,59,73,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_STARTDAMAGE,23,88,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_MAXDAMAGE,41,88,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_MINDAMAGE,59,88,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_TIMELIMIT,13,104,26,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_BOMNTIMER,13,119,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_INVULTIME,13,134,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_MAXBOMNSOUT,13,149,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_PUNCHDAMAGE,13,164,13,12,ES_NUMBER
+    EDITTEXT        IDC_GAM_HEALTHPERPOWERUP,13,180,13,12,ES_NUMBER
+    CONTROL         "P&ersistent Powerups",IDC_GAM_PERSISTENTPOWERUPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,195,77,8
+
+    CONTROL         "Show &FPS",IDC_APP_FPS,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,13,213,47,8
+    CONTROL         "&Audio Enabled",IDC_APP_AUDIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,224,61,8
+
+    CONTROL         "",ID_EDIT,"Button",BS_OWNERDRAW | WS_TABSTOP | 
+                    WS_GROUP,136,17,216,141
+    PUSHBUTTON      "&Load Map...",ID_LOAD,136,163,50,15
+    PUSHBUTTON      "&Save Map...",ID_SAVE,191,163,50,15
+    PUSHBUTTON      "&Generate...",ID_GEN,246,163,50,15
+    PUSHBUTTON      "&Clear Map...",ID_CLEAR,302,163,50,15
+
+    EDITTEXT        IDC_LEV_SPAWNHEALTH,136,193,17,12,ES_NUMBER | WS_GROUP
+    EDITTEXT        IDC_LEV_SPAWNBOMNS,136,209,17,12,ES_NUMBER
+    EDITTEXT        IDC_LEV_SPAWNINVUL,136,225,17,12,ES_NUMBER
+    EDITTEXT        IDC_LEV_SPAWNRADUPS,187,205,17,12,ES_NUMBER
+    EDITTEXT        IDC_LEV_SPAWNRADDOWNS,209,205,17,12,ES_NUMBER
+    EDITTEXT        IDC_LEV_SPAWNDAMUPS,187,220,17,12,ES_NUMBER
+    EDITTEXT        IDC_LEV_SPAWNDAMDOWNS,209,220,17,12,ES_NUMBER
+    EDITTEXT        IDC_LEV_SPAWNFREQ,254,183,26,12,ES_NUMBER
+    EDITTEXT        IDC_LEV_SPAWNCHANCE,262,198,17,12,ES_NUMBER
+
+    DEFPUSHBUTTON   "&Play",IDOK,364,7,45,54,WS_GROUP
+    PUSHBUTTON      "&Keys...",ID_KEYS,364,68,45,54
+    PUSHBUTTON      "&Help...",ID_HELP,364,128,45,54
+    PUSHBUTTON      "&Quit",IDCANCEL,364,189,45,54
+
+    GROUPBOX        "Game Options",IDC_STATIC,7,7,118,202
+    LTEXT           "Players",IDC_STATIC,25,20,24,8
+    LTEXT           "At Start",IDC_STATIC,11,34,26,8
+    LTEXT           "Max",IDC_STATIC,41,34,16,8
+    LTEXT           "Min",IDC_STATIC,60,34,16,8
+    LTEXT           "Health",IDC_STATIC,75,45,26,8
+    LTEXT           "Bomns",IDC_STATIC,75,60,26,8
+    LTEXT           "Radius",IDC_STATIC,75,75,26,8
+    LTEXT           "Damage",IDC_STATIC,75,90,31,8
+    LTEXT           "Time Limit in s, 0 = None",IDC_STATIC,42,106,79,8
+    LTEXT           "Bomn Timer Length in s",IDC_STATIC,29,121,77,8
+    LTEXT           "Invul. Time in s",IDC_STATIC,29,136,50,8
+    LTEXT           "Max Live Bomns per Player",IDC_STATIC,29,151,88,8
+    LTEXT           "Punch Damage",IDC_STATIC,29,167,51,8
+    LTEXT           "Health per Powerup",IDC_STATIC,29,183,64,8
+
+    GROUPBOX        "Level Options",IDC_STATIC,129,7,229,236
+    LTEXT           "Relative Chance to Spawn",IDC_STATIC,134,183,85,8
+    LTEXT           "Health",IDC_STATIC,156,196,22,8
+    LTEXT           "Bomns",IDC_STATIC,156,211,22,8
+    LTEXT           "Invuls",IDC_STATIC,156,227,22,8
+    LTEXT           "Up",IDC_STATIC,191,195,11,8
+    LTEXT           "Down",IDC_STATIC,209,195,22,8
+    LTEXT           "Radius",IDC_STATIC,229,207,23,8
+    LTEXT           "Damage",IDC_STATIC,229,222,28,8
+    LTEXT           "Item Spawn Time in s",IDC_STATIC,282,185,70,8
+    LTEXT           "% Chance to Spawn",IDC_STATIC,282,200,66,8
+
+    ICON            IDI_DEATH,IDC_STATIC,330,217,22,22
+    LTEXT           DXBOMNS_VER_STR_SEMILONG,IDC_STATIC,7,237,118,8
+END
+
+IDD_GEN DIALOGEX 0, 0, 167, 165
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Generate Level"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GEN_SEED,7,7,45,12,ES_NUMBER | WS_GROUP
+    EDITTEXT        IDC_GEN_NORMALWALLS,7,23,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_INDESTWALLS,7,39,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_WARPS,7,55,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_HEALTHS,7,70,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_BOMNS,7,86,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_INVULS,7,102,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_RADUPS,7,130,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_RADDOWNS,33,130,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_DAMUPS,7,146,21,12,ES_NUMBER
+    EDITTEXT        IDC_GEN_DAMDOWNS,33,146,21,12,ES_NUMBER
+
+    DEFPUSHBUTTON   "&Generate\nAdditional",IDOK,119,7,42,33,BS_MULTILINE | WS_GROUP
+    PUSHBUTTON      "Generate\nfrom\n&Scratch",ID_CLEARGEN,119,46,42,33,BS_MULTILINE
+    PUSHBUTTON      "&Help...",ID_HELP,119,85,42,33
+    PUSHBUTTON      "&Cancel",IDCANCEL,119,124,42,33
+
+    LTEXT           "Seed, 0 = Random",IDC_STATIC,54,9,62,8
+    LTEXT           "Normal Walls",IDC_STATIC,31,25,45,8
+    LTEXT           "Indestructible Walls",IDC_STATIC,31,41,64,8
+    LTEXT           "Warps",IDC_STATIC,31,57,23,8
+    LTEXT           "Healths",IDC_STATIC,31,72,27,8
+    LTEXT           "Bomns",IDC_STATIC,31,88,23,8
+    LTEXT           "Invulnerabilities",IDC_STATIC,31,104,51,8
+    LTEXT           "Up",IDC_STATIC,16,120,11,8
+    LTEXT           "Down",IDC_STATIC,34,120,21,8
+    LTEXT           "Radius",IDC_STATIC,57,132,24,8
+    LTEXT           "Damage",IDC_STATIC,57,148,29,8
+END
+
+IDD_KEYS DIALOGEX 0, 0, 236, 120
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_CENTER | 
+    WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Key Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_KEY_P1UP,7,17,46,12,WS_GROUP
+    EDITTEXT        IDC_KEY_P1DOWN,7,33,46,12
+    EDITTEXT        IDC_KEY_P1LEFT,7,49,46,12
+    EDITTEXT        IDC_KEY_P1RIGHT,7,65,46,12
+    EDITTEXT        IDC_KEY_P1DROP,7,81,46,12
+
+    EDITTEXT        IDC_KEY_P2UP,58,17,46,12
+    EDITTEXT        IDC_KEY_P2DOWN,58,33,46,12
+    EDITTEXT        IDC_KEY_P2LEFT,58,49,46,12
+    EDITTEXT        IDC_KEY_P2RIGHT,58,65,46,12
+    EDITTEXT        IDC_KEY_P2DROP,58,81,46,12
+
+    EDITTEXT        IDC_KEY_P3UP,109,17,46,12
+    EDITTEXT        IDC_KEY_P3DOWN,109,33,46,12
+    EDITTEXT        IDC_KEY_P3LEFT,109,49,46,12
+    EDITTEXT        IDC_KEY_P3RIGHT,109,65,46,12
+    EDITTEXT        IDC_KEY_P3DROP,109,81,46,12
+
+    EDITTEXT        IDC_KEY_P4UP,160,17,46,12
+    EDITTEXT        IDC_KEY_P4DOWN,160,33,46,12
+    EDITTEXT        IDC_KEY_P4LEFT,160,49,46,12
+    EDITTEXT        IDC_KEY_P4RIGHT,160,65,46,12
+    EDITTEXT        IDC_KEY_P4DROP,160,81,46,12
+
+    DEFPUSHBUTTON   "&OK",IDOK,7,99,70,14,WS_GROUP
+    PUSHBUTTON      "&Help...",ID_HELP,83,99,70,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,159,99,70,14
+
+    LTEXT           "Player 1",IDC_STATIC,16,7,27,8
+    LTEXT           "Player 2",IDC_STATIC,67,7,27,8
+    LTEXT           "Player 3",IDC_STATIC,118,7,27,8
+    LTEXT           "Player 4",IDC_STATIC,169,7,27,8
+    LTEXT           "Up",IDC_STATIC,209,19,21,8
+    LTEXT           "Down",IDC_STATIC,209,35,21,8
+    LTEXT           "Left",IDC_STATIC,209,51,21,8
+    LTEXT           "Right",IDC_STATIC,209,67,21,8
+    LTEXT           "Drop",IDC_STATIC,209,83,21,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "DXBomns.ico"
+IDI_DEATH               ICON    DISCARDABLE     "Death.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_STARTUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_GEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_KEYS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
